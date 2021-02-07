@@ -1,0 +1,24 @@
+{
+  "Vue": {
+    "scope": "vue",
+    "prefix": [
+      "component",
+    ],
+    "description": "新規コンポーネント作成",
+    "body": [
+      "<template>",
+      "  <div />",
+      "</template>",
+      "",
+      "<script lang=\"ts\">",
+      "import { Component, Vue } from 'vue-property-decorator'",
+      "",
+      "@Component",
+      "export default class ${TM_FILENAME_BASE} extends Vue {",
+      "",
+      "}",
+      "</script>",
+      "",
+    ],
+  }
+}

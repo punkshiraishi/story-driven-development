@@ -1,0 +1,33 @@
+{
+  "Story": {
+    "scope": "typescript",
+    "prefix": [
+      "story",
+    ],
+    "description": "コンポーネントストーリー雛形",
+    "body": [
+      "import ${TM_FILENAME/(.story.ts)//} from './${TM_FILENAME/(.story.ts)//}.vue'",
+      "",
+      "const ARG_TYPES = {", 
+      "",
+      "}",
+      "",
+      "export default {",
+      "  title: '${TM_FILENAME/(.story.ts)//}',",
+      "  component: ${TM_FILENAME/(.story.ts)//},",
+      "  argTypes: ARG_TYPES,",
+      "}",
+      "",
+      "export const basic = () => ({",
+      "  components: {",
+      "    ${TM_FILENAME/(.story.ts)//},",
+      "  },",
+      "  props: Object.keys(ARG_TYPES),",
+      "  template: `",
+      "    <${TM_FILENAME/(.story.ts)//} v-bind=\"\\$props\" />",
+      "  `,",
+      "})",
+      "",
+    ]
+  }
+}
